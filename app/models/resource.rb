@@ -2,6 +2,8 @@ class Resource < ActiveRecord::Base
 
   belongs_to :user
 
+  has_many :availabilities
+
   # def available_on?(day)
   #   @availability_dates.include? day
   # end
