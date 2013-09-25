@@ -1,6 +1,6 @@
 .rspec
 .ruby-version
-
+.DS_Store
 /.bundle
 
 # Ignore the default SQLite database.
