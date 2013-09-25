@@ -3,7 +3,8 @@ require 'spec_helper'
 describe Resource do
 
   before :all do
-    @resource = Resource.new
+    @user = User.create email: "user@example.com"
+    @user.resources.create name: "car"
   end
 
   it "is by default unavailable" do
