@@ -1,4 +1,4 @@
-require File.join(__dir__, 'spec_helper.rb')
+require 'spec_helper'
 
 describe Resource do
 

@@ -8,3 +8,4 @@
 ## Timing
 
 1. 1 hour spent on translation of the exercice into specs
+2. 40min spent on first try with ruby Set
