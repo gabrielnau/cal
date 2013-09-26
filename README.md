@@ -15,7 +15,7 @@ the availability record already exist, and 20 more to create each one
 1. 1 hour spent on translation of the exercice into specs
 2. 40min spent on first try with ruby Set
 3. 1 hour spent on setting up Rails 4
-4. 1.5 hour on making specs pass, and especially on fighting against this bug : http://pivotallabs.com/reading-the-ruby-source/, and also and querying for a date range
+4. 1.8 hour on making specs pass, and especially on fighting against this bug : http://pivotallabs.com/reading-the-ruby-source/, and also and querying for a date range
 
 ## Run tests
 
