@@ -8,7 +8,7 @@ class ResourceAvailability
     @resource.availabilities.where(date: day).any?
   end
 
-  def set_on=(day)
+  def set_on(day)
     @resource.availabilities.find_or_create_by!(date: day)
   end
 
@@ -16,8 +16,8 @@ class ResourceAvailability
     period_range.count == @resource.availabilities.where(date: period_range).count
   end
 
-  def during=(period_range)
-    period_range.each{ |day| set_on = day.to_date }
+  def during(period_range)
+    period_range.each{|day| set_on(day.to_date) }
   end
 
   def rate_during(month)
