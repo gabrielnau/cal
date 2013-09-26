@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130925210058) do
+ActiveRecord::Schema.define(version: 20130926170521) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20130925210058) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "availabilities", ["date", "resource_id"], name: "index_availabilities_on_date_and_resource_id", unique: true, using: :btree
 
   create_table "resources", force: true do |t|
     t.integer  "user_id"
