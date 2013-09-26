@@ -21,6 +21,5 @@ the availability record already exist, and 20 more to create each one
 
 - Poro : ```bundle exec rspec spec/resource_spec.rb```
 - Rails app :
-  1. Launch Postgresql
-  2. run ```RAILS_ENV=test rake db:create db:migrate```
-  3. rspec
+  1. run ```RAILS_ENV=test rake db:create db:migrate```
+  2. ```bundle exec rspec```

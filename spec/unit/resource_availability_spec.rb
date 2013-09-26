@@ -38,7 +38,7 @@ describe ResourceAvailability do
       expect(@resource_availability.on?(1.day.from_now.to_date)).to be_true
     end
 
-    pending "if availability already exists, it doesn't create a new one"
+    pending "doesn't create a new one if an availability already exists"
 
   end
 
@@ -60,9 +60,9 @@ describe ResourceAvailability do
 
   describe "#during" do
     it "sets availability for each day of the given period" do
-      @resource_availability.during (1.day.from_now.to_date..2.days.from_now.to_date)
-      expect(@resource_availability.on?(1.day.from_now)).to be_true
-      expect(@resource_availability.on?(2.day.from_now)).to be_true
+      @resource_availability.during(1.day.from_now.to_date..2.days.from_now.to_date)
+      expect(@resource_availability.on?(1.day.from_now.to_date)).to be_true
+      expect(@resource_availability.on?(2.day.from_now.to_date)).to be_true
     end
   end
 

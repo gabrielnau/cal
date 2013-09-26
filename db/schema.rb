@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20130926170521) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "availabilities", force: true do |t|
     t.date     "date"
     t.integer  "resource_id"
@@ -23,7 +20,7 @@ ActiveRecord::Schema.define(version: 20130926170521) do
     t.datetime "updated_at"
   end
 
-  add_index "availabilities", ["date", "resource_id"], name: "index_availabilities_on_date_and_resource_id", unique: true, using: :btree
+  add_index "availabilities", ["date", "resource_id"], name: "index_availabilities_on_date_and_resource_id", unique: true
 
   create_table "resources", force: true do |t|
     t.integer  "user_id"
